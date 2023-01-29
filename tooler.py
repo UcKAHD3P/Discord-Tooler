@@ -18,6 +18,11 @@ def status1():
     os.system('python ./tools/discordrpc/status.py')
 def status2():
     threading.Thread(target=status1).start()
+def nuk3r1():
+    print("Запускаю D1sk0rd AkkAyHT Ньюkep")
+    os.system('python ./tools/disc0rd-nuk3r/main.py')
+def nuk3r2():
+    threading.Thread(target=nuk3r1).start()
 def about():
     messagebox.showinfo(title='Tooler', message='Discord Tools by internetmilitarist#5585')
 root=Tk()
@@ -30,6 +35,8 @@ crashbot = Button(text='Краш-бот', background='red', command=crashbot2, w
 crashbot.place(x=10, y=45)
 status = Button(text='DiscordRPC', background='red', command=status2, width=10)
 status.place(x=10, y=85)
-about = Button(text='About', background='grey', command=about, width=20)
+nuk3r = Button(text='D1sc0rd AkkayHT Nuk3r', background='red', command=nuk3r2, width=20)
+nuk3r.place(x=10, y=120)
+about = Button(text='About', background='grey', command=about, width=15)
 about.place(x=150, y=45)
 root.mainloop()
