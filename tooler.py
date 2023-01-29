@@ -29,7 +29,7 @@ selfbot.place(x=10, y=10)
 crashbot = Button(text='Краш-бот', background='red', command=start_crashbot, width=10)
 crashbot.place(x=10, y=45)
 status = Button(text='DiscordRPC', background='red', command=start_status, width=10)
-status.place(x=10, y=85
+status.place(x=10, y=85)
 about = Button(text='About tooler', background='grey', command=about, width=20)
 about.place(x=150, y=45)
 root.mainloop()
