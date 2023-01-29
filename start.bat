@@ -1,3 +1,3 @@
 @echo off
-title Tooler
+title Discord-Tooler
 python tooler.py
