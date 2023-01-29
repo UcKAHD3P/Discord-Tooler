@@ -19,7 +19,7 @@ def status1():
 def status2():
     threading.Thread(target=status1).start()
 def nuk3r1():
-    print("Запускаю D1sk0rd AkkAyHT Ньюkep")
+    print("Запускаю D1sk0rd AkkAyHT Ньюkep...")
     os.system('python ./tools/disc0rd-nuk3r/main.py')
 def nuk3r2():
     threading.Thread(target=nuk3r1).start()
