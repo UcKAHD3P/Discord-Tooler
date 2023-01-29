@@ -3,33 +3,33 @@ from tkinter import *
 import time
 from tkinter import messagebox
 import threading
-def selfbot():
+def self1():
     print('Запускаю селф-бота...')
     os.system('python ./tools/selfbot/main.py')
-def start_selfbot():
-    threading.Thread(target=selfbot).start()
-def crashbot():
+def self2():
+    threading.Thread(target=self1).start()
+def crashbot1():
     print('Запускаю краш-бота...')
-    os.system('python ./tools/crashbot.py')
-def start_crashbot():
-    threading.Thread(target=crashbot).start()
-def status():
+    os.system('python ./tools/crashbot/crashbot.py')
+def crashbot2():
+    threading.Thread(target=crashbot1).start()
+def status1():
     print('Запускаю DiscordRPC...')
     os.system('python ./tools/discordrpc/status.py')
-def start_status():
-    threading.Thread(target=status).start()
+def status2():
+    threading.Thread(target=status1).start()
 def about():
     messagebox.showinfo(title='Tooler', message='Discord Tools by internetmilitarist#5585')
 root=Tk()
 root.title('TOOLER BY INTERNETMILITARIST')
 root.geometry('550x320')
 root.configure(background='grey')
-selfbot = Button(text='Селф-бот',background='red', command=start_selfbot, width=10)
+selfbot = Button(text='Селф-бот',background='red', command=self2, width=10)
 selfbot.place(x=10, y=10)
-crashbot = Button(text='Краш-бот', background='red', command=start_crashbot, width=10)
+crashbot = Button(text='Краш-бот', background='red', command=crashbot2, width=10)
 crashbot.place(x=10, y=45)
-status = Button(text='DiscordRPC', background='red', command=start_status, width=10)
+status = Button(text='DiscordRPC', background='red', command=status2, width=10)
 status.place(x=10, y=85)
-about = Button(text='About tooler', background='grey', command=about, width=20)
+about = Button(text='About', background='grey', command=about, width=20)
 about.place(x=150, y=45)
 root.mainloop()
