@@ -26,7 +26,7 @@ def nuk3r2():
 def about():
     messagebox.showinfo(title='Tooler', message='Discord Tools by internetmilitarist#5585')
 root=Tk()
-root.title('TOOLER BY INTERNETMILITARIST')
+root.title('Discord Tooler')
 root.geometry('550x320')
 root.configure(background='grey')
 selfbot = Button(text='Селф-бот',background='red', command=self2, width=10)
