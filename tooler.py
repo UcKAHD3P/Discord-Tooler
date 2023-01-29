@@ -7,7 +7,7 @@ def selfbot():
     print('Запускаю селф-бота...')
     os.system('python ./tools/selfbot/main.py')
 def start_selfbot():
-    threading.Thread(target=self).start()
+    threading.Thread(target=selfbot).start()
 def crashbot():
     print('Запускаю краш-бота...')
     os.system('python ./tools/crashbot.py')
